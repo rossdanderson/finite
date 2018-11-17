@@ -20,12 +20,6 @@ val stateMachineModel = create<State, Trigger, Target> {
 
     state<OnHook> {
         on<PickedUp> { transitionTo(AwaitingNumber()) }
-
-        on<NumberValidationResult.Success> { doNothing() }
-        on<NumberValidationResult.Failure> { doNothing() }
-
-        on<ConnectionResult.Success> { doNothing() }
-        on<ConnectionResult.Failure> { doNothing() }
     }
 
     state<OffHook> {
