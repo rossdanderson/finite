@@ -66,7 +66,6 @@ fun main() {
 
     // Start a state machine with a target object and initial state
     val stateMachine = stateMachineModel.start(Target("Target 1"), OnHook)
-
     stateMachine.fire(PickedUp)
     stateMachine.fire(NumberDialled("01234567890"))
 
