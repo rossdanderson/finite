@@ -11,7 +11,7 @@ Define and create state machines using a simple Kotlin DSL.
  * Provide a target object for applying side effects to for each state model instance - keep your code loosely coupled.
  * Re-use the same model to create many state machines.
  * Neatly handle unexpected triggers to mitigate issues such as crossing on the wire.
- * State transitions are handled on a (configurable) coroutine scope, helpin to avoid common threading pitfalls.
+ * State transitions are handled on a (configurable) coroutine scope, helping to avoid common threading pitfalls.
 
 # Usage
 An example state machine, and usage of it might be:
