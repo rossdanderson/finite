@@ -37,6 +37,9 @@ class StateMachine<State : Any, Trigger : Any, Target> internal constructor(
 
     private val channel = Channel<Trigger>(capacity = UNLIMITED)
 
+    val terminated
+        get() = channel.isClosedForSend
+
     /**
      * The current state
      */
