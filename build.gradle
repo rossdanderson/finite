@@ -4,8 +4,10 @@ buildscript {
     }
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
+        classpath 'com.novoda:bintray-release:0.9+'
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}")
     }
 }
@@ -18,5 +20,6 @@ allprojects {
 
     repositories {
         mavenCentral()
+        jcenter()
     }
 }
