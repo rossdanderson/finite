@@ -1,7 +1,5 @@
 # Finite
 
-![Build status](https://travis-ci.org/rossdanderson/finite.svg?branch=master "Build status")
-
 Define and create state machines using a simple Kotlin DSL.
 
 # Features
